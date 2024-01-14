@@ -1,0 +1,44 @@
+{
+  "name": "button-generator",
+  "version": "0.1.0",
+  "proxy": "https://api.iconfinder.com",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run proxy\" \"next dev\"",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "proxy": "node server.cjs"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "axios": "^1.6.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-color": "^2.19.3",
+    "react-dom": "^18",
+    "react-fontawesome": "^1.7.1",
+    "react-icons": "^4.12.0",
+    "react-onclickoutside": "^6.13.0",
+    "styled-components": "^6.1.1",
+    "tinycolor2": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-color": "^3.0.10",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "babel-plugin-styled-components": "^2.1.4",
+    "concurrently": "^8.2.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  }
+}
